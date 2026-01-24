@@ -205,6 +205,18 @@ ul {
   padding: 0 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 .section {
   padding: 5rem 0;
   position: relative;

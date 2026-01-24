@@ -146,3 +146,28 @@
     color: var(--brand-primary);
     transform: translateX(5px);
 }
+
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        gap: 2rem;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .project-img {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.5rem;
+    }
+}

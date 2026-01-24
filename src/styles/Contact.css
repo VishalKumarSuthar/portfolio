@@ -208,7 +208,6 @@
 
 /* Sub-breakpoints */
 @media screen and (max-width: 968px) {
-
     .section-title {
         padding-top: 2rem;
     }
@@ -221,5 +220,37 @@
     .contact-info,
     .contact-form {
         padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-section {
+        padding-top: 5rem;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+        font-size: 1.5rem;
+    }
+
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .info-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 1rem;
     }
 }
