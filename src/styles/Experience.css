@@ -1,0 +1,117 @@
+.experience-section {
+    padding-top: 0;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: var(--glass-border);
+    top: 50px;
+    bottom: 50px;
+    left: 30px;
+    margin-left: -1.5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.timeline-item {
+    position: relative;
+    padding: 2.5rem;
+    margin-left: 70px;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s var(--ease-smooth);
+}
+
+.timeline-item:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: var(--bg-dark);
+    border: 4px solid var(--brand-secondary);
+    border-radius: 50%;
+    left: -53px;
+    top: 3.5rem;
+    z-index: 2;
+    box-shadow: 0 0 15px var(--brand-secondary);
+    transition: 0.3s;
+}
+
+.timeline-item:hover .timeline-dot {
+    background: var(--brand-secondary);
+    box-shadow: 0 0 25px var(--brand-secondary);
+    transform: scale(1.2);
+}
+
+.timeline-date {
+    font-size: 0.95rem;
+    color: var(--brand-secondary);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timeline-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.timeline-content h4 {
+    font-size: 1.2rem;
+    background: var(--grad-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.timeline-content p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 20px;
+    }
+
+    .timeline-item {
+        margin-left: 50px;
+        padding: 1.5rem;
+    }
+
+    .timeline-dot {
+        left: -42px;
+        width: 18px;
+        height: 18px;
+        top: 2rem;
+    }
+}

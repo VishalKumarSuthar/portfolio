@@ -1,0 +1,225 @@
+.contact-section {
+    padding-top: 7rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+/* Glass panels are now handled by global '.glass' class in HTML
+   We only need to refine specific spacing/layout here */
+.contact-info,
+.contact-form {
+    padding: 3rem;
+    border-radius: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+    box-shadow: 0 0 30px rgba(0, 242, 170, 0.1);
+}
+
+.contact-info h3,
+.contact-form h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background: var(--grad-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.contact-info p {
+    margin-bottom: 2.5rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Info Items */
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(10px);
+    border-color: rgba(0, 242, 170, 0.3);
+    box-shadow: 0 0 20px rgba(0, 242, 170, 0.1);
+}
+
+.info-icon {
+    color: var(--brand-primary);
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 242, 170, 0.1);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(0, 242, 170, 0.2);
+}
+
+.info-item:hover .info-icon {
+    background: var(--brand-primary);
+    color: #000;
+    box-shadow: 0 0 25px var(--brand-primary);
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* Map Placeholder */
+.map-placeholder {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    margin-top: 2rem;
+    color: var(--text-muted);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    font-family: monospace;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: 0;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background: rgba(0, 0, 0, 0.6);
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 15px rgba(0, 242, 170, 0.3);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Error States */
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.1);
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+.error-text {
+    color: #ff4d4d;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    display: block;
+    margin-left: 0.5rem;
+}
+
+.success-msg {
+    color: #000;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.2rem;
+    background: var(--brand-primary);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 242, 170, 0.4);
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sub-breakpoints */
+@media screen and (max-width: 968px) {
+
+    .section-title {
+        padding-top: 2rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 2rem;
+    }
+}

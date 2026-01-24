@@ -1,0 +1,142 @@
+.navbar {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(5, 5, 5, 0.5);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    overflow: visible;
+    transition: all 0.4s ease;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.5px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo span {
+    background: var(--grad-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 8px 30px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 5px;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+/* "Magnetic" capsule hover effect */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50px;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link:hover::before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.nav-link.active {
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-link.active::before {
+    background: var(--grad-glass);
+    border: 1px solid var(--glass-highlight);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.mobile-icon {
+    display: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 999;
+}
+
+@media screen and (max-width: 960px) {
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        background: #000;
+        padding-top: 8rem;
+        border-radius: 0;
+        gap: 2rem;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 998;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .mobile-icon {
+        display: block;
+    }
+}
