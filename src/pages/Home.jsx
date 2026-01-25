@@ -16,7 +16,7 @@ const Home = () => {
                     </p>
                     <div className="hero-btns">
                         <Link to="/contact" className="btn btn-primary">Hire Me</Link>
-                        <a href="/resume_v1.pdf" className="btn btn-outline" download>Download CV</a>
+                        <a href="/resume.pdf" className="btn btn-outline" download>Download CV</a>
                     </div>
                 </div>
                 <div className="hero-image">
