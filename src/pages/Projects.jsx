@@ -39,8 +39,8 @@ const Projects = () => {
                             <p>A modern personal portfolio website with glassmorphism design.</p>
                             <div className="tech-stack">
                                 <span>React</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
                             </div>
                             <div className="project-links">
                                 <a href="#" className="btn-icon"><FaGithub /> Code</a>

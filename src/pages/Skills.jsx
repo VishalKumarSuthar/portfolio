@@ -18,11 +18,11 @@ const Skills = () => {
                             </div>
                             <div className="skill-card">
                                 <FaHtml5 className="skill-icon html" />
-                                <p>HTML</p>
+                                <p>HTML5</p>
                             </div>
                             <div className="skill-card">
                                 <FaCss3Alt className="skill-icon css" />
-                                <p>CSS</p>
+                                <p>CSS3</p>
                             </div>
                             <div className="skill-card">
                                 <FaJs className="skill-icon js" />
