@@ -7,7 +7,7 @@ const About = () => {
             <div className="container">
                 <div className="about-content">
                     <div className="about-img glass">
-                        <img src="https://via.placeholder.com/400" alt="Profile" />
+                        <img src="/profile.jpeg" alt="Profile" />
                     </div>
                     <div className="about-text glass">
                         <h2>About <span>Me</span></h2>

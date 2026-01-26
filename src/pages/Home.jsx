@@ -16,12 +16,12 @@ const Home = () => {
                     </p>
                     <div className="hero-btns">
                         <Link to="/contact" className="btn btn-primary">Hire Me</Link>
-                        <a href="resume.pdf" className="btn btn-outline" download>Download CV</a>
+                        <a href="/resume.pdf" className="btn btn-outline" download>Download CV</a>
                     </div>
                 </div>
                 <div className="hero-image">
                     <div className="img-box">
-                        <img src="profile.jpeg" alt="Profile" />
+                        <img src="/profile.jpeg" alt="Profile" />
                     </div>
                 </div>
             </div>

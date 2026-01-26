@@ -11,15 +11,16 @@ const Projects = () => {
                     {/* Project Card 1 */}
                     <div className="project-card glass">
                         <div className="project-img">
-                            <img src="https://via.placeholder.com/600x400" alt="Project 1" />
+                            <img src="/food.png" alt="Project 1" />
                         </div>
                         <div className="project-content">
                             <h3>E-Commerce Website</h3>
                             <p>A fully functional e-commerce platform with cart and checkout features.</p>
                             <div className="tech-stack">
                                 <span>React</span>
-                                <span>Redux</span>
-                                <span>Firebase</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
                             </div>
                             <div className="project-links">
                                 <a href="#" className="btn-icon"><FaGithub /> Code</a>
@@ -31,14 +32,15 @@ const Projects = () => {
                     {/* Project Card 2 */}
                     <div className="project-card glass">
                         <div className="project-img">
-                            <img src="https://via.placeholder.com/600x400" alt="Project 2" />
+                            <img src="port.png" alt="Project 2" />
                         </div>
                         <div className="project-content">
                             <h3>Portfolio Website</h3>
                             <p>A modern personal portfolio website with glassmorphism design.</p>
                             <div className="tech-stack">
                                 <span>React</span>
-                                <span>CSS3</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
                             </div>
                             <div className="project-links">
                                 <a href="#" className="btn-icon"><FaGithub /> Code</a>
