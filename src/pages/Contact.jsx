@@ -52,15 +52,15 @@ const Contact = () => {
 
                         <div className="info-item">
                             <FaEnvelope className="info-icon" />
-                            <span>email@example.com</span>
+                            <span>vishaljangid845@gmail.com</span>
                         </div>
                         <div className="info-item">
                             <FaPhone className="info-icon" />
-                            <span>+123 456 7890</span>
+                            <span>**********</span>
                         </div>
                         <div className="info-item">
                             <FaMapMarkerAlt className="info-icon" />
-                            <span>New York, USA</span>
+                            <span>Udaipur, India</span>
                         </div>
 
                         {/* Map Placeholder */}
