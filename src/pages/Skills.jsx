@@ -18,11 +18,11 @@ const Skills = () => {
                             </div>
                             <div className="skill-card">
                                 <FaHtml5 className="skill-icon html" />
-                                <p>HTML5</p>
+                                <p>HTML</p>
                             </div>
                             <div className="skill-card">
                                 <FaCss3Alt className="skill-icon css" />
-                                <p>CSS3</p>
+                                <p>CSS</p>
                             </div>
                             <div className="skill-card">
                                 <FaJs className="skill-icon js" />
@@ -36,11 +36,11 @@ const Skills = () => {
                         <div className="skill-grid">
                             <div className="skill-card">
                                 <FaGitAlt className="skill-icon git" />
-                                <p>Git</p>
+                                <p>Github</p>
                             </div>
                             <div className="skill-card">
                                 <FaNodeJs className="skill-icon node" />
-                                <p>Node.js</p>
+                                <p>Node.js (basic)</p>
                             </div>
                         </div>
                     </div>

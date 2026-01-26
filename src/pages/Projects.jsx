@@ -14,7 +14,7 @@ const Projects = () => {
                             <img src="/food.png" alt="Project 1" />
                         </div>
                         <div className="project-content">
-                            <h3>E-Commerce Website</h3>
+                            <h3>Food Delivery Website</h3>
                             <p>A fully functional e-commerce platform with cart and checkout features.</p>
                             <div className="tech-stack">
                                 <span>React</span>
@@ -52,11 +52,11 @@ const Projects = () => {
                     {/* Project Card 3 */}
                     <div className="project-card glass">
                         <div className="project-img">
-                            <img src="https://via.placeholder.com/600x400" alt="Project 3" />
+                            <img src="coming.jpg" alt="Project 3" />
                         </div>
                         <div className="project-content">
-                            <h3>Weather App</h3>
-                            <p>Real-time weather application using OpenWeatherMap API.</p>
+                            <h3>Coming Soon</h3>
+                            <p>.......</p>
                             <div className="tech-stack">
                                 <span>React</span>
                                 <span>API</span>
