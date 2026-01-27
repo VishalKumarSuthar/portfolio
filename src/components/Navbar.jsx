@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className="navbar glass">
             <div className="navbar-container">
                 <NavLink to="/" className="logo" onClick={closeMobileMenu}>
-                    Port<span>folio</span>
+                    Vishal <span>Jangid</span>
                 </NavLink>
 
                 <div className="mobile-icon" onClick={handleClick}>
