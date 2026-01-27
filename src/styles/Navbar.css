@@ -124,12 +124,15 @@
         transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
         background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(20px);
-        padding-top: 8rem;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
         border-radius: 0;
-        gap: 2rem;
+        gap: 1.5rem;
         justify-content: flex-start;
         align-items: center;
         z-index: 998;
+        overflow-y: auto;
+        /* Enable scrolling if items overflow */
     }
 
     .nav-menu.active {
@@ -138,7 +141,8 @@
     }
 
     .nav-link {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        /* Slightly smaller font to fit more */
         font-weight: 700;
         width: 100%;
         text-align: center;

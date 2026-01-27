@@ -72,3 +72,42 @@
     line-height: 1.7;
     font-size: 1.05rem;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 968px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .service-card {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-section {
+        padding-top: 5rem;
+    }
+
+    .service-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .service-icon {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.5rem;
+    }
+}
