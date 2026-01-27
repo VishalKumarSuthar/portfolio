@@ -129,7 +129,7 @@
 
 @media screen and (max-width: 480px) {
     .about-section {
-        padding: 60px 0;
+        padding: 120px 0 60px;
         min-height: auto;
     }
 
