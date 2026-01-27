@@ -64,8 +64,17 @@ const Contact = () => {
                         </div>
 
                         {/* Map Placeholder */}
-                        <div className="map-placeholder glass">
-                            <p>Google Map Placeholder</p>
+                        <div className="map-container glass">
+                            <iframe
+                                title="Google Map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116086.07929424851!2d73.62624450259461!3d24.620015509935406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56550a14411%3A0xdbd8c28455b868b0!2sUdaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1706606666666!5m2!1sen!2sin"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade">
+                            </iframe>
                         </div>
                     </div>
 
